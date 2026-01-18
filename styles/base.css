@@ -131,6 +131,11 @@ main h1 {
     height: 89%;
 }
 
+.wdr-content li{
+    margin-bottom: 15px;
+}
+
+
 footer {
     padding: 30px;
     text-align: center;
