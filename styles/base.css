@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 :root {
     --blue: #123b77;
 }
@@ -16,11 +14,15 @@ body {
     min-height: 100vh;
 }
 
+header {
+    background-color: var(--blue);
+
+}
+
 header #course-title {
     display: block;
     font-size: 30px;
     font-family: "bebas neue", sans-serif;
-    background-color: var(--blue);
     text-align: center;
     color: #fff;
     padding: 20px 0;
@@ -67,7 +69,7 @@ main h1 {
     background-color: #f4f4f4;
 }
 
-.card h3 {
+.card h2 {
     background-color: var(--blue);
     color: white;
     font-family: "bebas neue", sans-serif;
@@ -113,11 +115,6 @@ main h1 {
 .country-details {
     margin-top: 15px;
     min-height: 225px;
-}
-
-.country-description {
-    display: inline;
-    align-self: top;
 }
 
 #country-flag {
