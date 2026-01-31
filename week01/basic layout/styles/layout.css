@@ -21,20 +21,6 @@ header h1 {
     margin: 20px;
 }
 
-/* nav{
-    display: flex;
-    justify-content: space-around;
-    background-color: #000;
-    margin-top: 50px;
-    font-family: Arial,  sans-serif;
-} */
-
-/* nav a{
-    color: white;
-    text-decoration: none;
-    padding: 14px 5%;    
-} */
-
 nav { 
   display: flex;
   align-items: center;
