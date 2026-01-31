@@ -1,6 +1,7 @@
 :root {
-    --green: #009440;
-    --amarelo: #ffcb00;
+    --green: #006d2f;
+    --amarelo: #ffcc00;
+    --blue: #0033a0;
     --opac-yellow: #ffcb00d3;
     --opac-white: #ffffffd3;
 }
@@ -83,7 +84,7 @@ h2 {
     padding: 15px;
     background-color: var(--opac-yellow);
     margin-bottom: 10px;
-    color: var(--green);
+    color: var(--blue);
 }
 
 .weather h2::after {
