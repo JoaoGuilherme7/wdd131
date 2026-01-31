@@ -1,13 +1,17 @@
 :root {
     --green: #009440;
-    --opac-green: rgba(0, 148, 64, 0.663);
-    --amarelo: #ffcb00
+    --amarelo: #ffcb00;
+    --opac-yellow: #ffcb00d3;
+    --opac-white: #ffffffd3;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: "Roboto", sans-serif;
 }
 
@@ -25,50 +29,107 @@ h1 {
 
 main {
     position: relative;
-    min-height: 85vh;
-
+    min-height: 86vh;
 }
 
-.image, .info {
+.hero,
+.info {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border: 1px solid red;
+    overflow: hidden;
 }
 
-.card{
-   position: absolute;
+img {
+    min-width: 100%;
+    height: 100%;
 }
 
-.info .data{
-   top: 30px;
-   left: 30px; 
-
-   border: 1px solid blue;
+.card {
+    position: absolute;
+    background-color: var(--opac-white);
+    padding: 15px;
 }
 
-.info .weather{
-   bottom: 30px;
-   right: 30px; 
+.card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    line-height: 1.8;
+    font-size: 15px;
+    white-space: nowrap;
 
-   border: 1px solid blue;
 }
 
-h2{
+.labels {
+    text-align: right;
+}
+
+.data {
+    top: 30px;
+    left: 30px;
+}
+
+.weather {
+    bottom: 30px;
+    right: 30px;
+}
+
+h2 {
     position: relative;
-    right: 20px;
-    padding: 5px;
-    background-color: var(--opac-green);
+    right: 26px;
+    padding: 15px;
+    background-color: var(--opac-yellow);
+    margin-bottom: 10px;
+    color: var(--green);
 }
 
+.weather h2::after {
+    content: "🌤️";
+    float: right;
+}
 
-
+.weather-icon {
+    display: none;
+}
 
 footer {
     padding: 30px;
     text-align: center;
     background-color: var(--green);
     color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .hero,
+    .info,
+    .card,
+    .data,
+    .weather {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    h2 {
+        right: 0;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    .weather h2::after {
+        content: "";
+    }
+
+    .weather-icon {
+        display: block;
+        height: 100px;
+        padding: 0;
+    }
 }
