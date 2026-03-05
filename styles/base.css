@@ -9,10 +9,9 @@
     font-family: Arial, sans-serif;
 }
 
-
-
 header {
     background-color: var(--blue);
+    color: #fff;
 }
 
 header #course-title {
@@ -20,7 +19,6 @@ header #course-title {
     font-size: 30px;
     font-family: "bebas neue", sans-serif;
     text-align: center;
-    color: #fff;
     padding: 20px 0;
     width: 100%;
 }
@@ -67,7 +65,7 @@ main h1 {
 
 .card h2 {
     background-color: var(--blue);
-    color: white;
+    color: #fff;
     font-family: "bebas neue", sans-serif;
     letter-spacing: 2px;
 
@@ -135,9 +133,9 @@ footer {
     padding: 30px;
     text-align: center;
     background-color: var(--blue);
-    color: white;
+    color: #fff;
 }
 
 footer .last-modification {
-    color: yellow;
+    color: #ffff00;
 }
