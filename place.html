@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BYU Idaho WDD 131 – Dynamic Web Fundamentals Class, Page with Brazilian Data">
+    <meta name="author" content="João Guilherme Aguiar Moreira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 – Dynamic Web Fundamentals – João Moreira</title>
+</head>
+
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/brazil-portrait.webp">
+                <img src="images/brazil-landscape.webp" alt="Rio de Janeiro view">
+            </picture>
+        </div>
+
+        <section class="info">
+
+            <div class="card data">
+                <h2>Data</h2>
+                <div class="card-content">
+                    <div class="labels">
+                        <strong>Area: </strong><br>
+                        <strong>Population: </strong><br>
+                        <strong>Capital: </strong><br>
+                        <strong>Language: </strong><br>
+                        <strong>Currency: </strong><br>
+                        <strong>Time Zone: </strong><br>
+                        <strong>Calling Code:</strong><br>
+                        <strong>Internet TLD:</strong><br>
+                    </div>
+                    <div>
+                        <p> 8,515,767 km² </p>
+                        <p> 213,400,000 </p>
+                        <p> Brasília </p>
+                        <p> Portuguese </p>
+                        <p> Brazilian Real (BRL) </p>
+                        <p> UTC-3 </p>
+                        <p> +55 </p>
+                        <p> .br </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card weather">
+                <img class="weather-icon" src='images/weather.svg' alt='sun icon'>
+                <h2>Weather</h2>
+                <div class="card-content">
+                    <div class="labels">
+                        <strong>Temperature:</strong><br>
+                        <strong>Conditions:</strong><br>
+                        <strong>Wind:</strong><br>
+                        <strong>Wind Chill:</strong><br>
+                    </div>
+                    <div>
+                        <p>24.6ºC</p>
+                        <p>Partly Cloudy</p>
+                        <p>5 km/h</p>
+                        <p>25.2ºC</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🌴 João Guilherme Aguiar Moreira 🌴 Brazil</p>
+        <p class="last-modification">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
