@@ -1,0 +1,96 @@
+:root {
+    --purple: #2a2238;
+    --grey: #cecbcb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    background-color: var(--purple);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+form{
+    background-color: var(--grey);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+form>label:not(:first-child) {
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+select, input:not([type="radio"]):not([type="checkbox"]), textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+select{
+    background-color: #fff;
+}
+
+.radio-group{
+    display: flex;
+}
+
+.radio-group>div{
+    text-align: center;
+    font-size: .7rem;
+    flex:1;
+}
+
+.checkbox-group label{
+    display: inline-block;       
+}
+
+.checkbox-group span{
+    display: block; 
+    color: white;    
+}
+
+.optional::after {
+    content: " (optional)";
+    font-weight: normal;
+    font-size: 0.85em;
+    color: blue;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+input[type="submit"]{
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: var(--purple);
+    color: #fff;
+    width: 100%;
+}
