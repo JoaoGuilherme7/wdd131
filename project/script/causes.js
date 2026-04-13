@@ -1,0 +1,62 @@
+export const causes = [
+  {
+    id: 1,
+    title: "Help João",
+    short_description: "João needs urgent medical treatment.",
+    description: "João was recently diagnosed with a serious condition that requires immediate medical attention. His family cannot afford the full cost of treatment, and time is critical.",
+    about: "João Silva is a 32-year-old father of two who has always been the main provider for his family. Recently, he was diagnosed with a rare illness that requires urgent surgery and ongoing treatment. Due to the high costs and limited access to public healthcare resources, his family is struggling to cover the expenses. This campaign aims to give João a fighting chance to recover and return to his loved ones.",
+    goal: 10000,
+    raised: 3500,
+    image: "images/john.png",
+    category: "Health",
+    verified: true,
+    location: "Rio de Janeiro, Brazil",
+    created: "2026-03-10",
+    beneficiary: "João Silva"
+  },
+  {
+    id: 2,
+    title: "Food for Dona Rosa",
+    short_description: "Fundraising to buy basic food supplies.",
+    description: "Dona Rosa is facing financial hardship and needs help to secure basic food supplies for the coming months.",
+    about: "Dona Rosa is a retired elderly woman who lives alone and depends on a small pension that is no longer enough to cover her essential needs. With rising food prices, she has been struggling to maintain a basic diet. This campaign was created by neighbors who want to ensure she has access to nutritious meals and can live with dignity.",
+    goal: 2500,
+    raised: 1300,
+    image: "images/rose.png",
+    category: "Food",
+    verified: false,
+    location: "São Paulo, Brazil",
+    created: "2026-02-25",
+    beneficiary: "Dona Rosa"
+  },
+  {
+    id: 3,
+    title: "Carlos Surgery",
+    short_description: "Urgent surgery to improve quality of life.",
+    description: "Carlos requires a complex surgery that will significantly improve his quality of life and mobility.",
+    about: "Carlos Mendes is a 45-year-old worker who has been dealing with chronic pain for years due to a degenerative condition. Recently, doctors confirmed that surgery is the only viable solution. Without it, his condition will worsen, limiting his ability to work and support his family. This fundraiser seeks to cover hospital costs, post-surgery care, and rehabilitation.",
+    goal: 20000,
+    raised: 8000,
+    image: "images/carlos.png",
+    category: "Health",
+    verified: true,
+    location: "Belo Horizonte, Brazil",
+    created: "2026-01-15",
+    beneficiary: "Carlos Mendes"
+  },
+  {
+    id: 4,
+    title: "Support Hope Shelter",
+    short_description: "Help maintain a children's shelter.",
+    description: "Hope Shelter provides care and support for vulnerable children and needs help to continue its mission.",
+    about: "Hope Shelter is a non-profit organization that has been supporting children in vulnerable situations for over 10 years. They provide housing, education, and emotional support for dozens of kids who have been abandoned or come from unsafe environments. Due to recent funding cuts, the shelter is struggling to maintain its operations. This campaign aims to ensure the continuity of their essential work.",
+    goal: 15000,
+    raised: 7000,
+    image: "images/hope-shelter.png",
+    category: "Organization",
+    verified: false,
+    location: "Curitiba, Brazil",
+    created: "2026-03-01",
+    beneficiary: "Hope Shelter Institution"
+  }
+];

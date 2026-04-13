@@ -1,0 +1,151 @@
+main{
+    padding: 50px 200px;
+}
+
+.one{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.one.verified .title::after{
+    content: "Verified";
+    position: absolute;
+    right: 0;
+    background-color: green;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.one img{
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.one > div{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+}
+
+.one .title{
+    position: relative;
+    font-size: 2.5rem;
+    border-bottom: 1px solid #ccc;
+    color: var(--purple);
+}
+
+.one .description{
+    margin: 20px 0;
+    font-size: 1.2rem;
+    text-align: justify;
+
+}
+
+.amounts{
+    margin-top: auto;
+}
+
+.progress-bar {
+    margin: 5px 0;
+    background-color: #ccc;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.progress-bar .progress-achieved {
+    background-color: var(--purple);
+    /* width: 10%; */
+    height: 100%;
+    border-radius: 5px;
+}
+
+.raised-target {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.percentage{
+    font-size: 1.2rem;
+    color: var(--purple);
+    text-align: right;
+}
+
+button.donate{
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: .3s;
+
+    &:hover{
+        background-color: darkgreen;
+    }
+}
+
+
+.details {    
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 20px 0;        
+    
+    div{
+        width: 100%;
+        padding: 10px 0;
+        border-right: 1px solid #ccc;
+
+        p{
+            font-size: 1.4rem;
+            color: #666;        
+        }
+
+        p:last-child{
+            font-weight: bold;
+            color: var(--purple);
+        }
+    }
+
+    div:last-child{
+        border-right: none;
+    }
+}
+
+
+.about{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+   
+    img{
+        float: right;
+        height: 200px;
+        margin: 0 0 10px 10px;
+    }
+
+    h3{
+        font-size: 2rem;
+        color: var(--purple);
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-size: 1.3em;
+        color: #333;
+        text-align: justify;
+    }
+
+}

@@ -1,0 +1,39 @@
+:root {
+    --purple: #2a2238;
+    --purple-light: #4e3b6c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--purple);
+    color: #fff;
+}
+
+header ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.4rem;
+        transition: .3s;
+        padding: 10px 17px;
+    }
+
+    a:hover{
+        color: purple;
+        background-color: #fff;
+    }
+}

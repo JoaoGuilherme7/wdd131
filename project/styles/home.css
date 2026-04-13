@@ -1,41 +1,5 @@
-:root {
-    --purple: #2a2238;
-    --purple-light: #4e3b6c;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-}
-
-header{
-    padding: 30px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--purple);
-    color: #fff;
-}
-
-header ul{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    
-    a{
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.4rem;
-        transition: .3s;
-        padding: 10px 17px;
-    }
-
-    a:hover{
-        color: purple;
-        background-color: #fff;
-    }
+main{
+    padding: 50px;
 }
 
 section.cards{
@@ -44,7 +8,11 @@ section.cards{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 50px;
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .card{
@@ -52,10 +20,27 @@ section.cards{
     border-radius: 10px;
     padding: 15px;
     transition: .5s;
+    position: relative;
 
     &:hover{
-        box-shadow: 0 0 15px #555;
+        box-shadow: 0 0 15px #333;
+        cursor: pointer;
+
+        button{
+            background-color: var(--purple-light);
+        }
     }
+}
+
+.card.verified .progress-values::after{
+    content: "Verified";
+    position: absolute;
+    right: 20px;
+    background-color: green;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
 }
 
 .card img{
@@ -65,8 +50,13 @@ section.cards{
     border-radius: 10px;
 }
 
-.card .description{
+.card .title{
     margin-top: 10px;
+    color: var(--purple);
+}
+
+.card .description{
+    margin-top: 5px;
     padding-bottom: 2px;
     font-size: 1.0rem;
     color: #333;
@@ -97,10 +87,5 @@ section.cards{
     border-radius: 10px;
     cursor: pointer;
     transition: .3s;
-                font-weight: bold;
-
-
-    &:hover{
-            background-color: var(--purple-light);
-    }
+    font-weight: bold;
 }
