@@ -1,0 +1,106 @@
+:root {
+    --purple: #2a2238;
+    --purple-light: #4e3b6c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--purple);
+    color: #fff;
+}
+
+header ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.4rem;
+        transition: .3s;
+        padding: 10px 17px;
+    }
+
+    a:hover{
+        color: purple;
+        background-color: #fff;
+    }
+}
+
+section.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.card{
+    box-shadow: 0 0 10px #999;
+    border-radius: 10px;
+    padding: 15px;
+    transition: .5s;
+
+    &:hover{
+        box-shadow: 0 0 15px #555;
+    }
+}
+
+.card img{
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px; ;
+    border-radius: 10px;
+}
+
+.card .description{
+    margin-top: 10px;
+    padding-bottom: 2px;
+    font-size: 1.0rem;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+
+.card .progress-bar{
+    margin: 15px 0 5px;
+    background-color: #ccc;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.card .progress-bar .progress-achieved{
+    background-color: var(--purple);
+    width: 10%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card button{
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 0;
+    background-color: var(--purple);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+                font-weight: bold;
+
+
+    &:hover{
+            background-color: var(--purple-light);
+    }
+}
