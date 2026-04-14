@@ -89,3 +89,9 @@ section.cards{
     transition: .3s;
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 20px;
+    }   
+}
