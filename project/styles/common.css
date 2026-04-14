@@ -49,3 +49,10 @@ header ul{
         background-color: var(--purple-light);
     }
 }
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: var(--purple);
+    color: white;
+}
