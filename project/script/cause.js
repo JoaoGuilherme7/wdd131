@@ -7,7 +7,6 @@ const causeToCard = (cause) => {
     $('.description').textContent = cause.description;
     $('.target').textContent = `$${cause.goal}`;
     $('.raised').textContent = `$${cause.raised}`;
-    $('.percentage').textContent = `${Math.round((cause.raised / cause.goal) * 100)}%`;
     $('.main-image').src = cause.image;
     $('.progress-achieved').style.width = `${(cause.raised / cause.goal) * 100}%`;
 
@@ -21,7 +20,12 @@ const causeToCard = (cause) => {
     $('.location').textContent = cause.location;
     $('.beneficiary').textContent = cause.beneficiary;
 
-    $('.about-text').innerHTML = `<img src="${cause.image}" alt="" class="about-image">` + cause.about;
+    $('.about img').src = cause.image;
+    $('.about div').innerHTML += cause.about;
+    $('.donate').addEventListener('click', () => {
+        window.localStorage.setItem("cause", JSON.stringify(cause));
+        window.location.href = `payment.html?id=${cause.id}`
+    });
 }
 
 const cause = causes.find(cause => cause.id === parseInt(new URLSearchParams(window.location.search).get("id")));

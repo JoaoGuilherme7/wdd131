@@ -10,6 +10,16 @@
     font-family: "Roboto", sans-serif;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
 header{
     padding: 30px 20px;
     display: flex;
@@ -25,15 +35,17 @@ header ul{
     list-style: none;
     
     a{
-        color: #fff;
         text-decoration: none;
         font-size: 1.4rem;
         transition: .3s;
         padding: 10px 17px;
-    }
-
-    a:hover{
-        color: purple;
+        border-radius: 10px;
+        color: var(--purple);
         background-color: #fff;
+    }
+    
+    a:hover{
+        color: #fff;
+        background-color: var(--purple-light);
     }
 }

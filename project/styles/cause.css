@@ -129,6 +129,7 @@ button.donate{
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
+    min-height: 240px;
    
     img{
         float: right;
@@ -143,9 +144,50 @@ button.donate{
     }
 
     p{
-        font-size: 1.3em;
+        line-height: 1.4;
+        font-size: 1.2rem;
         color: #333;
         text-align: justify;
+        text-indent: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        padding: 20px;
     }
 
+    .one{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .one img{
+        width: 100%;
+        height: auto;
+    }
+
+    .one > div{
+        height: auto;
+    }
+
+    .details{
+        flex-direction: column;
+        
+        div{
+            border-right: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        div:last-child{
+            border-bottom: none;
+        }
+    }
+
+    .about img{
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+    
 }

@@ -1,0 +1,141 @@
+main{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.container{
+    width:600px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #000;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
+
+.container section{
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+
+}
+
+
+.cause{
+    display: flex;
+    gap: 20px;
+
+    .title{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--purple);
+    }
+
+    .category{
+        font-size: .8rem;
+        padding: 2px 5px;
+        background-color: var(--purple-light);
+        border-radius: 5px;
+        font-weight: bold;
+        color: #fff;
+        margin-top: 5px;
+    }
+
+    img{
+        height: 100px;
+        border-radius: 10px;
+    }
+}
+
+h4{
+    margin-bottom: 10px;
+}
+
+.donation-amount{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+
+    input{
+        width: 100%;
+        padding: 5px;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+}
+
+.amounts, .methods{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+    
+    button{
+        font-size: 1rem;
+        padding: 10px 0;
+        width: 100%;
+        background-color: var(--purple-light);
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+
+        &:hover, &.active{
+            background-color: #fff;
+            color: var(--purple);
+            box-shadow: 0 0 6px var(--purple-light);
+        }
+
+    }
+}
+
+.payment-methods{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.info div{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+em.optional{
+    font-size: 0.8rem;
+    color: #777;
+    font-weight: normal;
+}
+
+.info span{
+    display: grid;
+    width: 100%;
+
+    input{
+        width: 100%;
+        padding: 10px;
+        font-size: .9rem;
+    }
+}
+
+#news{
+    margin: 15px 2px 0;
+}
+
+input.donate{
+    margin: 10px 0;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.safe-msg{
+    text-align: center;
+    color: #777;
+}
+
+.error-message{
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}

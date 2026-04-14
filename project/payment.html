@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/payment.css">
+
+    <script type="module" src="script/payment.js" defer></script>
+    <title>Kind Link</title>
+</head>
+<body>
+    <header>
+        <h1>Kind Link</h1>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form class="container">
+            <p>You are contributing to:</p>
+            
+            <section class="cause">
+                <img src="" alt="">
+                <div>
+                    <p class="title"></p>
+                    <span class="category"></span>
+                </div>
+            </section>
+
+            <section class="donation-amount">
+                <h4>Donation Amount</h4>
+                <div class="amounts">
+                    <button type="button">$10</button>
+                    <button type="button">$25</button>
+                    <button type="button">$50</button>
+                    <button type="button">$100</button>
+                    <button type="button">$200</button>
+                </div>
+                <input type="number" id="amount" class="amount" required>
+            </section>
+
+            <section class="payment-methods">
+                <h4>Payment Method</h4>
+                <div class="methods">
+                    <button type="button">Credit Card</button>
+                    <button type="button">PayPal</button>
+                    <button type="button">Bank Transfer</button>
+                </div>
+            </section>
+
+            <section class="info">
+                <h4>Your Information <em class="optional">optional</em></h4>
+
+                <div>
+                    <span>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                    </span>
+
+                    <span>
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </span>
+                </div>
+                <input type="checkbox" name="news" id="news">
+                <label for="news">I want to get news from this cause</label>
+            </section>
+
+            <p class="error-message"></p>
+            <input  type="submit" class="donate" value="Confirm Donation"/>
+            <p class="safe-msg">Your Donation is safe and secure</p>
+        </form>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
